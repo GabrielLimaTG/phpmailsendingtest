@@ -1,8 +1,8 @@
 <?php
-$help = $_POST["help"];
-$message = $_POST["message"];
-$name = $_POST["name"];
-$email = $_POST["email"];
+$help = $_GET["help"];
+$message = $_GET["message"];
+$name = $_GET["name"];
+$email = $_GET["email"];
 $sendTo = "musicgabriellima@gmail.com";
 
 mail($sendTo, $help, $message, $name, $email);
