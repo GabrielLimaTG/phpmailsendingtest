@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Bertan Website</title>
+    <link rel = "icon" href="./LOGO/tabicon.jpg" type = "image/icon type">
+    <!--CSS CONF-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://weloveiconfonts.com/api/?family=entypo">
+</head>
+<body>
+    <h1 style="display: none;">GABRIEL BERTAN WEBSITE</h1>
+    <main>
+        <!--PAGE 1---------------------------------------------------->
+        <div class="section" id="page1">
+            <div>    
+                <a href="#page2">
+                    <img class="logo button" src="./LOGO/Gabriel Bertan.gif">
+                </a>
+            </div>
+        </div>
+        <!--PAGE 2--------------------------------------------------->
+        <div class="section" id="page2">
+            <div class="leftside">
+                <a href="#page3" class="button">
+                    <img class="hovergif" src="./LOGO/Work.gif">
+                </a>   
+            </div>
+            <div class="rightside">
+                <div class="intro">
+                    <h2>Hello</h2>
+                    <br>
+                    <h3>My name is <b>Gabriel Bertan</b>.</h3>
+                    <br>
+                    <h3>I'm a composer, producer and musician from Brazil.</h3>
+                    <br>
+                    <h3>I compose for my YouTube Channel and for Bands.</h3>
+                    <br>
+                    <h3>I'm on my way to the cinema industry.</h3>
+                    <br>
+                    <h3>I perform the guitar and I sing</h3>
+                    <br>
+                    <h3>Did you know I also developed this website?</h3>
+                    <br>
+                    <h4>Wanna contact me? Use the form below.</h4>
+                </div>
+                <div class="form">
+                    <form action="thankyou.php" method="POST">
+                        <label for="help"><h5>How can I help?</h5></label>
+                        <select name="help" class="box">
+                            <option value>Select one...</option>
+                            <option value="Compose">Compose</option>
+                            <option value="Produce">Produce</option>
+                            <option value="Web development">Web development</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <label for="message"><h5>Tell me more...</h5></label>
+                        <textarea name="message" minlength="20" maxlength="5000" class="box" placeholder="Describe your project"></textarea>
+                        <label for="name"><h5>Your name</h5></label>
+                        <input type="text" minlength="3" maxlength="256" name="name" placeholder="Enter your name" class="box" required="">
+                        <label for="email"><h5>Your Email</h5></label>
+                        <input type="text" minlength="8" maxlength="256" name="email" placeholder="Enter your email" class="box" required="">
+                        <br>
+                        <br>
+                        <br>
+                        <button type="submit" value="Send" class="box">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--PAGE 3---------------------------------------------------------->
+        <div class="section" id="page3">
+            <div class="left">
+                <b>DAW COMPOSITION</b>
+                <br>
+                <iframe class="video" src="https://www.youtube.com/embed/9ttIyzSHdbc" title="The Power" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/ywiJqk9UkAE" title="Hibrid Études" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            </div>
+            <div class="right">
+                <b>PERFORMED COMPOSITION</b>
+                <br>
+                <iframe class="video" src="https://www.youtube.com/embed/HhYVC5rcdSo" title="Sem Você" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+    </main>
+    <!--FOOTER--------------------------------------------------------------->
+    <footer>
+        <div class="footer">
+            <a href="https://www.youtube.com/channel/UCN1in9v9ZfYzEtXUlMf_-CA" target="_blank"><img src="./LOGO/youtube.svg"></a>
+            <a href="https://www.instagram.com/ga.bertan/" target="_blank"><img src="./LOGO/instagram.svg"></a>
+            <a href="https://patreon.com/gabrielbertan?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link" target="_blank"><img src="./LOGO/patreon.svg" id="imgs3"></a>
+        </div>
+        <div class="top"><a class="entypo-up-open-big button" href="#page1"></a></div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

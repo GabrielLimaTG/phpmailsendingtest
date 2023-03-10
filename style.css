@@ -1,0 +1,292 @@
+body{position: relative;
+    font-family: 'Balsamiq Sans', cursive;
+    color: aliceblue;
+}
+h2{
+font-size: 40px;
+}
+h3{
+font-size: 25px;
+padding-top: 15px;
+}
+h4{
+font-size: 35px;
+padding: 25px 0 15px 0;
+}
+h5{
+color: #B58E24;
+font-size: 28px;
+padding-top: 25px;
+}
+b{
+    font-size: 40px;
+    
+    font-family: 'Indie Flower', cursive;
+}
+
+/*PAGE 1----------------------*/
+#page1{
+    background-image: url(./BACKGROUND/page1.jpg);
+    background-position: center;
+    background-size: cover  ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.logo{
+    width: 300px;
+    border-radius: 100%;
+    opacity: 0.45;
+}
+
+
+/*PAGE 2--------------------*/
+
+#page2{
+    background-image: url(./BACKGROUND/page2.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+}
+
+.leftside{
+    width: 35.7%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hovergif{
+    border-radius: 100%;
+    width: 165px;
+    opacity: 0.5;
+}
+.hovergif:hover{
+    border-radius: 100%;
+    width: 165px;
+    opacity: 0.3;
+}
+
+.rightside{
+    width: 64.3%;
+    height: 100vh;
+    display: block;
+    padding-left: 28%;
+}
+
+.intro{
+    padding-top: 3%;
+    height: 56%;
+    overflow-y: auto;
+}
+
+.form{
+    height: 44%;
+    overflow-y: auto;
+    
+
+}
+.box{
+    height: 30px;
+    width: 88%;
+    max-width: 88%;
+    max-height: 500px;
+    min-height: 30px;
+}
+
+/*PAGE 3------------------------*/
+#page3{
+    background-image: url(./BACKGROUND/page3.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page3 b{
+    font-weight: 600;
+}
+
+.left{
+    width: 50%;
+    height: 100vh;
+    padding: 8% 10% 0% 10%;
+    
+}
+.right{
+    width: 50%;
+    height: 100vh;
+    padding: 15% 10% 0% 10%;
+}
+
+
+.video{
+    width: 560px; height: 315px;
+}
+
+/*FOOTER------------------------*/
+footer{
+    display: flex;
+}
+.footer{
+   
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    object-fit: contain;
+}
+
+.footer a{
+    max-width: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+}
+
+#imgs3{
+    padding: 16px;
+    max-width: 90px;
+}
+
+.top{
+    
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-up-open-big"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+.entypo-up-open-big{
+    text-decoration: none;
+    font-size: 60px;
+    color: #000;
+}
+
+.entypo-up-open-big:hover{
+    color: #555;
+    text-shadow: 2px 2px 2px #101010;
+}
+
+/*THANK YOU---------------------*/
+
+
+#thankyou{
+    width: 300px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+#thankyou:hover{
+    opacity: 0;
+}
+
+#home{
+    width: 300px;
+    border-radius: 100%;
+}
+
+
+/*MOBILE------------------------*/
+@media (max-width: 1110px) {
+    .logo{
+        width: 150px;
+        border-radius: 100%;
+        opacity: 0.45;
+    }
+    h2{
+        font-size: 30px;
+        }
+    h3{
+        font-size: 16px;
+        padding-top: 3px;
+        }
+    h4{
+        font-size: 25px;
+        padding: 5px 0 5px 0;
+        }
+    h5{
+        color: darkgoldenrod;
+        font-size: 20px;
+        }
+    .rightside{
+            width: 64.3%;
+            height: 100vh;
+            display: block;
+            padding-left: 10%;
+        }
+        b{
+            font-size: 36px;
+            
+            font-family: 'Indie Flower', cursive;
+        }
+        .left b,
+        .right b{font-size: 16px;}
+
+        .footer{
+            height: 80px;
+            background: rgb(255,74,59);
+background: linear-gradient(180deg, rgba(255,74,59,0) 0%, rgba(255,74,59,1) 100%);
+        }
+        
+}
+
+@media (max-width: 660px) {
+
+    .video{
+        width: 315px;
+        height: 150px;
+
+    }
+    .page3{display: block;}
+
+    .left, .right{width: 100%;height: 50%;}
+
+    .footer{
+        justify-content: center;   
+     }
+
+     .top{
+      display: none;
+     }
+}
+
+@media (min-width: 661px) and (max-width: 1380px) {
+
+    .video{
+        width: 315px;
+        height: 150px;
+        
+    }
+    .left, .right {
+        padding: 3%;
+    }
+
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
